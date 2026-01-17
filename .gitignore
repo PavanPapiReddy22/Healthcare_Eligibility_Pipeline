@@ -19,9 +19,4 @@ _SUCCESS
 Thumbs.db
 
 # Project specific
-data/*.txt
-data/*.csv
-data/*.json
-data/*.parquet
-data/*.orc
 output/
