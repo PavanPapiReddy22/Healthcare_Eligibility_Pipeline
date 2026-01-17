@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# Spark / Hadoop
+.spark-staging/
+metastore_db/
+spark-warehouse/
+derby.log
+*.crc
+_SUCCESS
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+data/*.txt
+data/*.csv
+data/*.json
+data/*.parquet
+data/*.orc
+output/

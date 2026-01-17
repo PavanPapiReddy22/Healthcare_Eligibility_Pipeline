@@ -1,0 +1,71 @@
+{
+    "acme": {
+        "file_name": "acme.txt",
+        "file_type": "delimited",
+        "delimiter": "|",
+        "has_header": true,
+        "input_date_format": "MM/dd/yyyy",
+        "mappings": {
+            "MBI": "external_id",
+            "FNAME": "first_name",
+            "LNAME": "last_name",
+            "DOB": "dob",
+            "EMAIL": "email",
+            "PHONE": "phone"
+        }
+    },
+    "bettercare": {
+        "file_name": "bettercare.csv",
+        "file_type": "delimited",
+        "delimiter": ",",
+        "has_header": true,
+        "input_date_format": "yyyy-MM-dd",
+        "mappings": {
+            "subscriber_id": "external_id",
+            "first_name": "first_name",
+            "last_name": "last_name",
+            "date_of_birth": "dob",
+            "email": "email",
+            "phone": "phone"
+        }
+    },
+    "carejson": {
+        "file_name": "care.json",
+        "file_type": "json",
+        "input_date_format": "yyyy-MM-dd",
+        "mappings": {
+            "id": "external_id",
+            "f_name": "first_name",
+            "l_name": "last_name",
+            "birth_date": "dob",
+            "contact_email": "email",
+            "contact_phone": "phone"
+        }
+    },
+    "provider_parquet": {
+        "file_name": "provider_c.parquet",
+        "file_type": "parquet",
+        "input_date_format": "yyyy-MM-dd",
+        "mappings": {
+            "memberID": "external_id",
+            "givenName": "first_name",
+            "familyName": "last_name",
+            "birthDate": "dob",
+            "emailAddress": "email",
+            "phoneNumber": "phone"
+        }
+    },
+    "provider_orc": {
+        "file_name": "provider_d.orc",
+        "file_type": "orc",
+        "input_date_format": "yyyy-MM-dd",
+        "mappings": {
+            "m_id": "external_id",
+            "first": "first_name",
+            "last": "last_name",
+            "dob": "dob",
+            "email_addr": "email",
+            "contact": "phone"
+        }
+    }
+}
